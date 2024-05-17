@@ -1,0 +1,58 @@
+課表
+
+1. 主控台(if 迴圈 陣列 函數 演算法 資料結構 記憶體原理 物件導向:封裝)
+2. WinForm  應用程式 (更多應用程式開發，更進階物件導向，底層套件，資料庫，爬蟲) => 前後分離
+3. 網頁設計(框架: Angular/React/Vue) =>個人網頁 作品集
+4. 雲端伺服器架設 (AWS EC2 網域申請)
+
+
+主控台章節：
+變數宣告：基本變數宣告、使用者輸入輸出、型別轉換、TryParse教學
+If 教學： 減法式寫法、比薩練習、貸款償還練習，BMI作業
+迴圈教學(一): for while forEach介紹、練習終極密碼、亂數教學：介紹亂數是如何產生的、GUID是什麼
+迴圈教學(二):for質數判斷、1-100質數判斷(後面講函數內功心法) 	作業：FIZZ練習、終極密碼、印星星(菱形)、猜數字(幾A幾B)
+函數教學：callby value/reference , ref out 差別、幾A幾B,內功心法：如何寫好程式碼
+
+陣列教學：基本陣列宣告教學，二維陣列使用方式（輸入學生成績並計算總分與平均）、物件容器介紹：Stack教學，前中後序+括號比對、LeetCode練習：隨機亂數不重複(洗牌法、HashSet)
+資料結構＆演算法：時間複雜度介紹、排序演算法(氣泡排序、快速排序、二分搜尋法)
+三大題目來練習物件導向、關注點分離、最小知識原則、List使用
+
+
+
+
+WinForm章節：
+
+WinForm => (前後端分離的架構+學會前端工具使用 = 做出各種不同的應用) 目標:80%的程式都能重複使用，20% UI重新開發
+1.小算盤 => 認識三大特性 + SOLID五大原則 + DesignPattern
+2.模擬大樂透開獎 => 熟悉前後端分離的架構 + 針對物件導向的封裝 加強熟悉 + 如何動態生成前端物件
+<MAUI APP 設計> =>　感受如何在一行程式碼都不用改寫的情況下，能自動完成ＡＰＰ移植
+<GIT版本控制> => 能夠學會版本控制切換 以及正統GitFlow流程
+
+3.POS機點餐應用 => 更進階物件導向開發技巧,擴充功能 + 模擬業界需求(在不告訴你完整需求的情況下思考如何實現好維護好擴展的架構) + eventHandler事件處理 + 兩個 DesignPattern (觀察者模式+策略模式)
+<Youtuber上片通知> => 學習觀察者模式
+<學會自製LinkedList> => 感受+考驗 物件導向技巧 + 泛型 + 委派 + 實作一個一模一樣的List
+<自製LINQ> => 學會如何自己寫出 Select/Where/Any/First/Last
+
+4.記帳應用程式 => 復刻天天記帳APP + CSV檔案讀取/寫入 + 根據資料內容資料群組 + 圖表繪製(圓餅圖 直條圖 折線圖) + 自創DesignPattern (獨體模式 + (建造者模式 抽象工廠 策略模式) => 自創pattern) + 掌握記憶體管理(memory leak) + 自製使用者元件
+<自製CSV套件> => 學習如何自己開發一個獨立套件(Library) + 泛型 + 反射
+<DI容器注入> => 學會控制反轉 + 自製 DI容器
+<分層架構設計> => 了解各種 MVC/MVP/MVVM 專案分層架構
+
+5.Imgur應用程式 =>復刻Imgur Application , 網路傳輸協定 TCP/IP HttpRquest,RestfulAPI,OAuth2.0
+<了解網路通訊協定> => 了解OSI 網路五層、DNS、DHCP、了解如何切割網段
+<自製HttpRequest> => 製作屬於自己的HttpLibrary (必須要能重複使用) + 學會非同步的網路開發
+<分層架構> => 先學會寫HTTP => 再學會寫 ImgurAPI 服務 => 復刻WinForm版本的 Imgur
+<自製WinForm套件> => 自製分頁套件
+
+6.旅遊景點規劃 應用程式 => 運用GoogleMap API 來去開發旅遊景點規劃應用 => 行程規劃 旅遊應用
+<串接GoogleMAP API>  => 讀懂 GoogleMap API  => 學習別人的 Google Map Github Source Code => 自製 GoogleMap API Library (學會再不依賴google/開發文件 要有能力通靈 學會使用套件)
+<串接Google Map> => 使用別人寫好的 第三方的GoogleMap套件 => 自製/加工 GoogleMap Library
+<自製WinForm套件> => AutoComplete套件
+<匯出word/pdf> => 匯出指定旅遊規劃文件 (套版)
+
+7.做你自己想做的應用(作品集)
+<資料庫> => 如何根據需求規劃資料表 (ER Model => ERD) , 根據各種不同的需求撰寫SQL語法
+<網路爬蟲> => 抓取資料作為資料庫的真實資料
+
+資深工程師三件套: 泛型 反射 委派
+
