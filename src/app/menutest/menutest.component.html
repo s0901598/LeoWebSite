@@ -1,18 +1,17 @@
 <div>
-  <h1>GeeksforGeeks</h1>
-  <h3>Angular Material Menu</h3>
-  <button mat-button [matMenuTriggerFor]="menu1">
-    CSS Menu
-  </button>
-  <mat-menu #menu1="matMenu">
-    <button mat-menu-item>
-      Material UI
-    </button>
-    <button mat-menu-item>
-      Tailwind Css
-    </button>
-    <button mat-menu-item>
-      Bootstrap
-    </button>
-  </mat-menu>
+    <div>wehiuewhjfoi</div>
+    <div>
+        <a nz-dropdown [nzDropdownMenu]="menu">
+            Hover me
+            <span nz-icon nzType="down"></span>
+        </a>
+        <nz-dropdown-menu #menu="nzDropdownMenu">
+            <ul nz-menu nzSelectable>
+                <li nz-menu-item>1st menu item</li>
+                <li nz-menu-item>2nd menu item</li>
+                <li nz-menu-item>3rd menu item</li>
+                <li nz-menu-item nzDanger>4th danger item</li>
+            </ul>
+        </nz-dropdown-menu>
+    </div>
 </div>
