@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { BrowserModule } from '@angular/platform-browser';
@@ -30,7 +31,8 @@ registerLocaleData(zh);
     FormsModule,
     HttpClientModule,
     NzButtonModule,
-    NzDropDownModule
+    NzDropDownModule,
+    NzSpinModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_TW }

@@ -1,10 +1,21 @@
 <div class="home flex bg-cyan-950	  text-white 	p-4 sm:p-0 ">
   <div class="home_name w-3/4 text-center pl-20 sm:hidden">
-    <i class="fa-solid fa-star"></i>
-    Leo程式設計
+    <i class="fa-solid fa-star"></i> Leo程式設計
   </div>
   <div class="home_hamburger w-1/4 text-right sm:hidden	">
-    <i class="fa-solid fa-bars"></i>
+    <a nz-dropdown [nzDropdownMenu]="menu" nzTrigger='click'>
+      <i class="fa-solid fa-bars"></i>
+      <span nz-icon nzType="down"></span>
+    </a>
+    <nz-dropdown-menu #menu="nzDropdownMenu">
+      <ul nz-menu nzSelectable>
+        <li nz-menu-item class="justify-center">首頁</li>
+        <li nz-menu-item class="justify-center">前後端架構</li>
+        <li nz-menu-item class="justify-center">課程介紹</li>
+        <li nz-menu-item class="justify-center">聯繫我們</li>
+      </ul>
+    </nz-dropdown-menu>
+
   </div>
 
   <div class="home_item hidden md:flex w-4/5 mx-auto flex justify-evenly ">
