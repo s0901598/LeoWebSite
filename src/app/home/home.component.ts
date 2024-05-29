@@ -10,6 +10,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const slideText = document.getElementById("home_title");
+    if (slideText) {
+      slideText.classList.add("slide-in");
   }
 
-}
+}}
