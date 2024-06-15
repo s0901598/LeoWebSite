@@ -10,6 +10,13 @@ export class TimelineComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.addEventListener("DOMContentLoaded", () => {
+      const lines = document.querySelectorAll('.line');
+      lines.forEach(line => {
+        line.classList.add('animate');
+      });
+    });
+
   }
 
 }

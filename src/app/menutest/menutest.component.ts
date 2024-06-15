@@ -10,16 +10,23 @@ import { Component, OnInit } from '@angular/core';
 ]
 })
 export class MenutestComponent implements OnInit {
-  nzSpinning=true
-  ngAfterViewInit() {
-    // 页面加载完成后隐藏加载指示器
-    this.nzSpinning = false;
-  }
+
 
   constructor() {
    }
 
   ngOnInit(): void {
+    // script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const lines = document.querySelectorAll('.line');
+  lines.forEach(line => {
+    line.classList.add('animate');
+  });
+});
+
+
+
+
 }
 
   }
