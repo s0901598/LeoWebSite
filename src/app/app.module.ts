@@ -15,6 +15,7 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TimelineComponent } from './timeline/timeline.component';
 
 
 
@@ -24,7 +25,8 @@ registerLocaleData(zh);
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    MenutestComponent
+    MenutestComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
