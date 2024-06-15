@@ -14,8 +14,10 @@ import { zh_TW } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { FormsModule } from '@angular/forms';
+
 import { HttpClientModule } from '@angular/common/http';
 import { TimelineComponent } from './timeline/timeline.component';
+import { RouterModule, Routes } from '@angular/router';
 
 
 
@@ -36,7 +38,9 @@ registerLocaleData(zh);
     HttpClientModule,
     NzButtonModule,
     NzDropDownModule,
-    NzSpinModule
+    NzSpinModule,
+    RouterModule,
+
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_TW }
