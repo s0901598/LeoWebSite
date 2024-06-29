@@ -1,0 +1,46 @@
+
+
+
+.card-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+
+  height: 60vh;
+
+
+  position: relative;
+  perspective: 150rem;
+  cursor: pointer;
+}
+.font,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 3rem;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.font {
+
+  height: 60vh;
+  background:linear-gradient(to bottom, #fceabb, #f8b500);
+}
+.back {
+  height: 60vh;
+  background:linear-gradient(to bottom, #fceabb, #f8b500);
+
+  transform: rotateY(-180deg);
+}
+.card:hover .font {
+  transform: rotateY(180deg);
+}
+.card:hover .back {
+  transform: rotateY(0);
+}

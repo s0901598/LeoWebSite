@@ -1,3 +1,12 @@
-.home{
+/* .home{
   background-image: url(../../assets/sun.jpg);
+} */
+.navbar{
+  top: 0;
+  width: 100%;
+  background-color: #f3eded;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加底部阴影 */
+  padding: 2px;
+  text-align: center;
+  z-index: 1000; /* 确保导航栏在其他内容之上 */
 }

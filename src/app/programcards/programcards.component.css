@@ -46,7 +46,7 @@
 }
 .btn:hover,
 .btn:focus {
-  color: black;
+  color: white;
 }
 .btn:hover span {
   transform: translateY(0) scale(2);

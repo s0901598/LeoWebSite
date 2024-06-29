@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TimelineComponent } from './timeline/timeline.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProgramcardsComponent } from './programcards/programcards.component';
+import { SkillcardsComponent } from './skillcards/skillcards.component';
 
 
 
@@ -30,7 +31,8 @@ registerLocaleData(zh);
     HomeComponent,
     MenutestComponent,
     TimelineComponent,
-    ProgramcardsComponent
+    ProgramcardsComponent,
+    SkillcardsComponent
   ],
   imports: [
     BrowserModule,
