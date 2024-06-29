@@ -1,0 +1,65 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* 垂直方向上均匀分配 */
+  text-align: justify;
+  align-items: center; /* 水平方向居中 */
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+  padding: 1.25rem;
+  text-align: center;
+  height:80vh;
+}
+.description{
+  text-align: justify;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  min-width: 200px;
+  background: #FFFFFF;
+  border: 2px solid goldenrod;
+  border-radius: 4px;
+  color: goldenrod;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 10px 20px;
+}
+.btn span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: goldenrod;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+.btn:hover,
+.btn:focus {
+  color: black;
+}
+.btn:hover span {
+  transform: translateY(0) scale(2);
+}
+.btn span:nth-child(1) {
+  --n: 1;
+}
+.btn span:nth-child(2) {
+  --n: 2;
+}
+.btn span:nth-child(3) {
+  --n: 3;
+}
+.btn span:nth-child(4) {
+  --n: 4;
+}

@@ -3,7 +3,9 @@
     background-size: cover;
     background-position: center;
 }
-
+.outer{
+  height:60vh;
+}
 
 
  @keyframes typing {

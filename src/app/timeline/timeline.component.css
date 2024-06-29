@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 .timeline{
-  --background: #615e5e;
+  --background: #ed9898;
   --accent: #c0e79d;
   --text: white;
   --line: #c4c4c4;
@@ -72,7 +72,6 @@ body {
   top: 50%;
   transform: translateY(-50%);
   margin-top: 1px;
-  bottom: 0px;
   right: -15px;
   font-size: 25px;
   color: var(--accent);

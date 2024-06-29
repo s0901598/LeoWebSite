@@ -1,6 +1,6 @@
 /* styles.css */
 .timeline {
- background-color: rgb(101, 90, 90);
+ --background-color: rgb(235, 156, 156);
   --line-color: #c0e79d;
   --dot-color: blue;
   width: 100%;
@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--line-color);
+  background: rgb(235, 156, 156);
   transform: translateY(-50%);
   z-index: 1;
 }
