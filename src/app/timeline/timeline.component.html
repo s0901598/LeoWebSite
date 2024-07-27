@@ -1,40 +1,15 @@
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet" />
-<div class="timeline " style="--items: 4;">
-  <div class="text-center text-xl text-slate-950 font-bold mb-16">
-    工作經歷
-  </div>
-  <ul>
-    <li style="--index: 1">
-      <h3>2016</h3>
-      <h2>財團法人資訊工業策進會</h2>
-    </li>
-    <li style="--index: 2">
-      <h3>2017</h3>
-      <h2>盈世智慧科技股份有限公司</h2>
-      <p>issue追蹤系統<br>
-        ⼒煒奈米科技-ERP系統<br>
-        ⼒煒奈米科技-KAS<br>
-        SCADA資安防護系統</p>
-      <div class="line-container">
-        <div class="dot"></div>
-        <div class="line"></div>
+<div class="timeline-container">
+  <div class="timeline">
+    <ng-container *ngFor="let item of paginatedData; let i = index">
+      <div class="timeline-item" [ngClass]="{'odd': i % 2 !== 0, 'even': i % 2 === 0}">
+        <div class="timeline-content">
+          <div class="timeline-date">{{ item.date }}</div>
+          <div class="timeline-title">{{ item.title }}</div>
+          <div class="timeline-description">{{ item.description }}</div>
+        </div>
       </div>
-    </li>
-    <li style="--index: 3">
-      <h3>2019</h3>
-      <h2>大云永續科技股份有限公司</h2>
-      <p>Email Analysis System<br>
-        電商平台<br>
-        靈骨塔銷售管理系統<br>
-        廢棄物清除管理APP<br>
-        ESG 智慧永續雲官網<br>
-        CRM系統
-      </p>
-    </li>
-    <li style="--index: 4">
-      <h3>2018 Jan-Mar</h3>
-      <p>Started TuDoLink project Team building Project Feasibility Analysis</p>
-    </li>
-
-  </ul>
+    </ng-container>
+  </div>
+  <button class="nav-button prev" (click)="changePage(-1)" [disabled]="!canGoBack">&lt;</button>
+  <button class="nav-button next" (click)="changePage(1)" [disabled]="!canGoForward">&gt;</button>
 </div>
