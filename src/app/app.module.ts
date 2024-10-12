@@ -5,10 +5,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MenutestComponent } from './menutest/menutest.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { zh_TW } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
@@ -16,10 +13,14 @@ import zh from '@angular/common/locales/zh';
 import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
-import { TimelineComponent } from './timeline/timeline.component';
 import { RouterModule, Routes } from '@angular/router';
-import { ProgramcardsComponent } from './programcards/programcards.component';
-import { SkillcardsComponent } from './skillcards/skillcards.component';
+import { MainComponent } from './main/main.component';
+import { HomeComponent } from './main/home/home.component';
+import { MenutestComponent } from './main/menutest/menutest.component';
+import { NavBarComponent } from './main/nav-bar/nav-bar.component';
+import { ProgramcardsComponent } from './main/programcards/programcards.component';
+import { SkillcardsComponent } from './main/skillcards/skillcards.component';
+import { TimelineComponent } from './main/timeline/timeline.component';
 
 
 
@@ -32,7 +33,8 @@ registerLocaleData(zh);
     MenutestComponent,
     TimelineComponent,
     ProgramcardsComponent,
-    SkillcardsComponent
+    SkillcardsComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

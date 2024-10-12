@@ -1,0 +1,115 @@
+.shape {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #4a4e69;
+  animation: float 10s infinite ease-in-out;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #9a8c98;
+  animation: rotate 15s infinite linear;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background: #c9ada7;
+  animation: pulse 8s infinite ease-in-out;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+.new-content {
+  position: absolute;
+  top: 200vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #1a1a2e;
+  font-size: 4rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.shutter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.shutter.is--active {
+  opacity: 1;
+}
+
+.shutter svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 360%;
+  height: 300%;
+}
+
+.shutter path {
+  animation: glow 4s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+      filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  }
+
+  100% {
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+  }
+}
